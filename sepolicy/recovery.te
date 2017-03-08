@@ -1,0 +1,9 @@
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+# recovery console (used in recovery init.rc for /sbin/recovery)
+
+# special factory reset & backup/restore needs permissive mode
+# permissive recovery;
+
+recovery_only(`     allow recovery device:dir rw_dir_perms;    ')
