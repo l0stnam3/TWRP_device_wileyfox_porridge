@@ -16,11 +16,12 @@ Camera  | 5MPx + 2MPx, LED Flash
 Для сборки recovery TWRP 3.1.x.x в исходниках СМ 
 заменить bootable/recovery на соответствующую из omirom
 
-$ cd $(LOCAL_DIR)/device/MTS/SMART_Surf_4G
-$ . apply-patch.sh
+	$ cd $(LOCAL_DIR)/device/MTS/SMART_Surf_4G
+	$ . apply-patch.sh
 
-$ . build/envsetup.sh
-$ lunch cm_SMART_Surf_4G-userdebug
-$ make clean
-$ make recoveryimage 
+	$ . build/envsetup.sh
+	$ lunch cm_SMART_Surf_4G-userdebug
+	$ make clean
+	$ make recoveryimage 
+
 
