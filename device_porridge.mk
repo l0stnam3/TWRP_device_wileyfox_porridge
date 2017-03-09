@@ -1,4 +1,4 @@
-LOCAL_PATH := device/MTS/SMART_Surf_4G
+LOCAL_PATH := device/wileyfox/porridge
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)

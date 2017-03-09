@@ -22,6 +22,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),SMART_Surf_4G)
+ifeq ($(TARGET_DEVICE),porridge)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif

@@ -1,9 +1,9 @@
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := mt6735m
+TARGET_BOOTLOADER_BOARD_NAME := mt6735
 TARGET_NO_BOOTLOADER := true
  
 # Architecture
-TARGET_BOARD_PLATFORM := mt6735m
+TARGET_BOARD_PLATFORM := mt6735
 TARGET_ARCH := arm64
 TARGET_NO_BOOTLOADER := true
 TARGET_CPU_ABI := arm64-v8a
@@ -48,7 +48,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_RAMDISK_OFFSET := 0x03f88000
 
 # prebuild kernel as fallback
-TARGET_PREBUILT_KERNEL := device/MTS/SMART_Surf_4G/kernel
+TARGET_PREBUILT_KERNEL := device/wileyfox/porridge/kernel
 
 #extracted from /proc/partinfo
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
@@ -66,7 +66,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_NO_FACTORYIMAGE := true
 
 # system.prop
-TARGET_SYSTEM_PROP := device/MTS/SMART_Surf_4G/system.prop
+TARGET_SYSTEM_PROP := device/wileyfox/porridge/system.prop
 
 # Mediatek flags
 BOARD_HAS_MTK_HARDWARE := true
@@ -76,19 +76,19 @@ COMMON_GLOBAL_CPPFLAGS += -DMTK_HARDWARE
 
 # SELinux
 BOARD_SEPOLICY_DIRS := \
-		device/MTS/SMART_Surf_4G/sepolicy
+		device/wileyfox/porridge/sepolicy
 
 BOARD_SEPOLICY_UNION := \
 		recovery.te
 
 # recovery__________TWRP 3.0.3
 
-TARGET_RECOVERY_FSTAB := device/MTS/SMART_Surf_4G/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/wileyfox/porridge/recovery.fstab
 BOARD_HAS_NO_SELECT_BUTTON := true
 TW_THEME := portrait_hdpi
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TW_DEFAULT_LANGUAGE := ru
-TW_DEVICE_VERSION := 0 by hyperion70
+#TW_DEVICE_VERSION := 0 by hyperion70, sorry hyperion70 :)
 RECOVERY_SDCARD_ON_DATA := true
 TW_INTERNAL_STORAGE_PATH := "/data/media"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "data"

@@ -64,58 +64,6 @@ index 20b6089..eef7a87 100644
  	mData.SetValue("tw_app_install_status", "0"); // 0 = no status, 1 = not installed, 2 = already installed
  #endif
  
-diff --git a/gui/theme/landscape_hdpi/ui.xml b/gui/theme/landscape_hdpi/ui.xml
-index 34ef530..3fb33bb 100644
---- a/gui/theme/landscape_hdpi/ui.xml
-+++ b/gui/theme/landscape_hdpi/ui.xml
-@@ -70,7 +70,7 @@
- 	</resources>
- 
- 	<variables>
--		<variable name="tw_samsung_navbar" value="0" persist="1"/>
-+		<variable name="tw_samsung_navbar" value="1" persist="0"/>
- 		<variable name="tw_navbar_button_position" value="0" persist="1"/>
- 
- 		<variable name="tw_hide_kb" value="0"/>
-diff --git a/gui/theme/landscape_mdpi/ui.xml b/gui/theme/landscape_mdpi/ui.xml
-index c2cfc4f..41a213a 100644
---- a/gui/theme/landscape_mdpi/ui.xml
-+++ b/gui/theme/landscape_mdpi/ui.xml
-@@ -70,7 +70,7 @@
- 	</resources>
- 
- 	<variables>
--		<variable name="tw_samsung_navbar" value="0" persist="1"/>
-+		<variable name="tw_samsung_navbar" value="1" persist="0"/>
- 		<variable name="tw_navbar_button_position" value="0" persist="1"/>
- 
- 		<variable name="tw_hide_kb" value="0"/>
-diff --git a/gui/theme/portrait_hdpi/ui.xml b/gui/theme/portrait_hdpi/ui.xml
-index 4bce146..7fcb5e9 100644
---- a/gui/theme/portrait_hdpi/ui.xml
-+++ b/gui/theme/portrait_hdpi/ui.xml
-@@ -71,7 +71,7 @@
- 	</resources>
- 
- 	<variables>
--		<variable name="tw_samsung_navbar" value="0" persist="1"/>
-+		<variable name="tw_samsung_navbar" value="1" persist="0"/>
- 
- 		<variable name="tw_hide_kb" value="0"/>
- 		<variable name="screen_width" value="1080"/>
-diff --git a/gui/theme/portrait_mdpi/ui.xml b/gui/theme/portrait_mdpi/ui.xml
-index 94c1428..5ef5f72 100644
---- a/gui/theme/portrait_mdpi/ui.xml
-+++ b/gui/theme/portrait_mdpi/ui.xml
-@@ -71,7 +71,7 @@
- 	</resources>
- 
- 	<variables>
--		<variable name="tw_samsung_navbar" value="0" persist="1"/>
-+		<variable name="tw_samsung_navbar" value="1" persist="0"/>
- 
- 		<variable name="tw_hide_kb" value="0"/>
- 		<variable name="screen_width" value="480"/>
 diff --git a/twrp-functions.cpp b/twrp-functions.cpp
 index 3c6c55b..638a2dc 100644
 --- a/twrp-functions.cpp
